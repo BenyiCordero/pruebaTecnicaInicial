@@ -1,4 +1,6 @@
 package com.booster.pruebaTecnica.task;
 
-public interface TaskRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface TaskRepository extends JpaRepository<Task, Long> {
 }
