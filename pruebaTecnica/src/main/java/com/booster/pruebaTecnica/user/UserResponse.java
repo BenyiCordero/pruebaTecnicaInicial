@@ -1,4 +1,7 @@
 package com.booster.pruebaTecnica.user;
 
-public record UserResponse() {
+public record UserResponse(
+        String name,
+        String email
+) {
 }
