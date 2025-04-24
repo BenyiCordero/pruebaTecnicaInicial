@@ -77,7 +77,7 @@ com.programandoenjava.jwt
 1. Clonar el repositorio:
 ```bash
 git clone https://github.com/tu-usuario/pruebaTecnicaInicial
-cd pruebTecnicaInicial
+cd pruebaTecnicaInicial
 ```
 
 2. Configurar la base de datos en `application.properties`:
