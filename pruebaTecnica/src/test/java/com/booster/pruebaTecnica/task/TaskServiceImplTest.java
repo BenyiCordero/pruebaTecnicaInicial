@@ -52,7 +52,7 @@ public class TaskServiceImplTest {
         Task tarea = new Task(1L, "Tarea encontrada", "Descripcion tarea encontrada","pendiente");
         when(taskRepository.findById(1L)).thenReturn(Optional.of(tarea));
 
-        Task result = taskService.getTaskById(1l);
+        Task result = taskService.getTaskById(1L);
 
         assertNotNull(result);
         assertEquals("Descripcion tarea encontrada", result.getDescription());
@@ -79,7 +79,6 @@ public class TaskServiceImplTest {
 
     @Test
     void testDeleteTaskById (){
-        Task tarea = new Task(1L, "Tarea", "Descripcion", "pendiente");
 
         when(taskRepository.existsById(1L)).thenReturn(true);
 
