@@ -6,7 +6,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+/**
+ * Controlador de tareas, aqui llamamos a la interfaz TareaService y a sus metodos que puse ahi
+ * Tambien marcamos la ruta general como /tareas1
+ */
 @RestController
 @RequestMapping("/tareas")
 public class TaskController {

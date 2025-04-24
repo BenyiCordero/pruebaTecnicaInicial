@@ -14,7 +14,13 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 import static org.mockito.Mockito.never;
-
+/**
+ * Pruebas unitarias para la clase {@link TaskServiceImpl}.
+ * <p>
+ * Se utilizan mocks para simular la lógica del {@link TaskRepository} y
+ * verificar que {@link TaskServiceImpl} interactúe correctamente con él.
+ * </p>
+ */
 public class TaskServiceImplTest {
 
     @Mock

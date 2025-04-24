@@ -16,6 +16,11 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * Este es nuestro service que nos servirá para registrar, autenticar usuarios, salvar, revocar, y
+ * refrescar los tokens, el cual usará el UserRepository, TokenRepository, PasswordEncoder, JwtService,
+ * AuthenticationManager para realizar las tareas ya mencionadas
+ */
 @Service
 @RequiredArgsConstructor
 public class AuthService {
@@ -26,6 +31,11 @@ public class AuthService {
     private final JwtService jwtService;
     private final AuthenticationManager authenticationManager;
 
+    /**
+     *
+     * @param request
+     * @return
+     */
     public TokenResponse register(final RegisterRequest request) {
         final User user = User.builder()
                 .name(request.name())

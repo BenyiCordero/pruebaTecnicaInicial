@@ -19,7 +19,13 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 import static org.springframework.security.config.http.SessionCreationPolicy.STATELESS;
-
+/**
+ * Clase de configuración de seguridad de Spring Security.
+ * <p>
+ * Define cómo se gestionan las solicitudes HTTP, qué rutas están protegidas y cómo
+ * se maneja la autenticación utilizando JWT (JSON Web Token).
+ * </p>
+ */
 @Configuration
 @EnableWebSecurity
 @RequiredArgsConstructor
@@ -30,7 +36,13 @@ public class SecurityConfig {
     private final JwtAuthenticationFilter jwtAuthFilter;
     private final AuthenticationProvider authenticationProvider;
     private final TokenRepository tokenRepository;
-
+    /**
+     * Configura la cadena de filtros de seguridad de Spring Security.
+     *
+     * @param http la instancia de {@link HttpSecurity} provista por Spring
+     * @return la cadena de filtros de seguridad configurada
+     * @throws Exception si ocurre un error en la configuración
+     */
     @Bean
     public SecurityFilterChain securityFilterChain(final HttpSecurity http) throws Exception {
         http

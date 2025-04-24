@@ -6,6 +6,10 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+/**
+ * RestController en el cual mapeamos las rutas para poder acceder a la /auth de register, login y
+ * refresh token, aqui llamamos a nuestro AuthService
+ */
 @RestController
 @RequestMapping("/auth")
 @RequiredArgsConstructor
@@ -13,6 +17,11 @@ public class AuthController {
 
     private final AuthService service;
 
+    /**
+     *
+     * @param request
+     * @return
+     */
     @PostMapping("/register")
     public ResponseEntity<TokenResponse> register(@RequestBody RegisterRequest request) {
         final TokenResponse response = service.register(request);

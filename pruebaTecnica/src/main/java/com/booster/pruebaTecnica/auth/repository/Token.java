@@ -7,6 +7,10 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ * Clase Token, @Entity, en el cual definimos nuestro id del token, token, tipo de token, si esta revoked,
+ * o si esta expirado, al igual que un join con el user id
+ */
 @Data
 @Builder
 @NoArgsConstructor

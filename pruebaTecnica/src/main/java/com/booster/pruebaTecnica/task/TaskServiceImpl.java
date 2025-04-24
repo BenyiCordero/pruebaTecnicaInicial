@@ -4,7 +4,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+/**
+ * Este sera el encargado de brindar el servicio para crear las tareas, esta es una clase la cual implementa todos los
+ * metodos y funciones que se pusieron en nuestra interfaz TareaService y desde aqui haremos la peticion hacia el
+ * repositorio
+ */
 @Service
 public class TaskServiceImpl implements TaskService{
     //Instancia de la clase, la cual nos permitira llamar a nuestro repositorio y sus metodos o funciones

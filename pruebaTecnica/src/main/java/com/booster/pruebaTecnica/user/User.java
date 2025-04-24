@@ -8,7 +8,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.List;
-
+/**
+ * Entidad que representa a un usuario en la base de datos.
+ * <p>
+ * Cada usuario tiene un nombre, un correo electrónico único, una contraseña cifrada
+ * y una lista de tokens asociados que se utilizan para autenticación mediante JWT.
+ * </p>
+ */
 @Data
 @Builder
 @NoArgsConstructor

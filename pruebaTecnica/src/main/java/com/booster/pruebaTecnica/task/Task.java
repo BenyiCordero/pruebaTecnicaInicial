@@ -2,6 +2,10 @@ package com.booster.pruebaTecnica.task;
 
 import jakarta.persistence.*;
 
+/**
+ * Clase tarea (entidad) que nos permite asignar atributos y mapearlos para que se genere la estructura de nuestra tabla
+ * en la base de datos, junto con los constructores y getters y setters
+ */
 @Entity
 @Table(name = "tasks")
 public class Task {

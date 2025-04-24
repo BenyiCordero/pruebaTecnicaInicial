@@ -11,8 +11,13 @@ import javax.crypto.SecretKey;
 import java.util.Date;
 import java.util.Map;
 
+/**
+ * Servicio que extrae el Username, genera token, y genera el refresh token, comprueba si el token
+ * es válido, o si esta expirado, extraemos la expiracion del token y obtenemos la signInKey, y esto
+ * lo hace por medio de valores que estan en nuestro applicationProperties, como la secretKey, el
+ * jwtExpiration, refreshExpiration
+ */
 @Service
-
 public class JwtService {
 
     @Value("${application.security.jwt.secret-key}")
@@ -22,6 +27,11 @@ public class JwtService {
     @Value("${application.security.jwt.refresh-token.expiration}")
     private long refreshExpiration;
 
+    /**
+     *
+     * @param token
+     * @return
+     */
     public String extractUsername(String token) {
         return Jwts.parser()
                 .verifyWith(getSignInKey())

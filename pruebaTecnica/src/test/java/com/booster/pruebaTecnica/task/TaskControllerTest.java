@@ -15,7 +15,13 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.patch;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-
+/**
+ * Pruebas de integración para el controlador de tareas {@link TaskController}.
+ * <p>
+ * Esta clase prueba los endpoints REST para operaciones CRUD sobre tareas,
+ * utilizando {@link MockMvc} para simular solicitudes HTTP.
+ * </p>
+ */
 @SpringBootTest
 @AutoConfigureMockMvc
 @WithMockUser

@@ -14,12 +14,20 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+/**
+ * Configuración que permite obtener los userDetailsService, AuthenticationProvider, AuthenticationManager,
+ * decoder, mediante el UserRepository
+ */
 @Configuration
 @RequiredArgsConstructor
 public class AppConfig {
 
     private final UserRepository repository;
 
+    /**
+     *
+     * @return
+     */
     @Bean
     public UserDetailsService userDetailsService() {
         return username -> {
