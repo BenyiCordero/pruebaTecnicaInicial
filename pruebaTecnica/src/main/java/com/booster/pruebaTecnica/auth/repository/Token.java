@@ -1,11 +1,11 @@
 package com.booster.pruebaTecnica.auth.repository;
 
+import com.booster.pruebaTecnica.user.User;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.security.core.userdetails.User;
 
 @Data
 @Builder
