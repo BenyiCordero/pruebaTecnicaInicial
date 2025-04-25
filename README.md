@@ -76,7 +76,7 @@ com.programandoenjava.jwt
 
 1. Clonar el repositorio:
 ```bash
-git clone https://github.com/tu-usuario/pruebaTecnicaInicial
+git clone https://github.com/BenyiCordero/pruebaTecnicaInicial.git
 cd pruebaTecnicaInicial
 ```
 
